@@ -38,7 +38,7 @@ function RouterFunction($stateProvider) {
 }
 
 function bookarooFactoryFunction($resource) {
-  return $resource("http://localhost:3000/books/:id"
+  return $resource("http://localhost:3000/books/:id")
 }
 
 function bookarooIndexControllerFunction(bookarooFactory) {
