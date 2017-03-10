@@ -43,7 +43,7 @@ function bookarooFactoryFunction($resource) {
 
 function bookarooIndexControllerFunction(bookarooFactory) {
   this.genres = bookarooFactory.query()
-})
+}
 
 function bookarooShowControllerFunction(bookarooFactory, $stateParams) {
   this.book = bookarooFactory.get({id: $stateParams.id})
