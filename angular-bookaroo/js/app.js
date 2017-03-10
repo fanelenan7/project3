@@ -17,7 +17,7 @@ angular
   ])
   .controller("bookarooShowController", [
     "bookarooFactory",
-    "$state",
+    "$stateParams",
     bookarooShowControllerFunction
   ])
 
@@ -38,7 +38,13 @@ function RouterFunction($stateProvider) {
 }
 
 function bookarooFactoryFunction($resource) {
-  return $resource("http://localhost:3000/books/:id")
+  return $resource("http://localhost:3000/books/:id"
 }
 
-function bookarooIndexControllerFunction()
+function bookarooIndexControllerFunction(bookarooFactory) {
+  this.genres = bookarooFactory.query()
+})
+
+function bookarooShowControllerFunction(bookarooFactory, $stateParams) {
+  this.book = bookarooFactory.get({id: $stateParams.id})
+}
