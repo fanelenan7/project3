@@ -63,3 +63,4 @@ function bookarooShowControllerFunction(bookarooBookFactory, $stateParams) {
       return $stateParams.id ? book.subject == $stateParams.id : true //checks for a category, if none, randomly choose from all books
     }).randomElement()
   })
+}
