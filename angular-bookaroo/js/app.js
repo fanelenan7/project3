@@ -40,8 +40,7 @@ function RouterFunction($stateProvider) {
       controllerAs: "vm"
     })
 }
-
-Array.prototype.randomElement = function () {
+Array.prototype.randomElement = function () { //added to prototype so I can randomly choose book without ruining scope in the show controller
     return this[Math.floor(Math.random() * this.length)]
 }
 
@@ -55,12 +54,12 @@ function bookarooGenreFactoryFunction($resource) {
 }
 function bookarooIndexControllerFunction(bookarooGenreFactory) {
   this.genres = bookarooGenreFactory.query()
-  this.genres.$promise.then((genres)=>this.genreArray = genres.map((genre)=>genre.subject))
+  this.genres.$promise.then((genres)=>this.genreArray = genres)
 }
 function bookarooShowControllerFunction(bookarooBookFactory, $stateParams) {
   this.books = bookarooBookFactory.query()
   this.books.$promise.then((books)=>{ //*.query() is asynchronous and has not finished retrieving the value. using then to retrieve value
     this.book = books.filter( function(book){ //finding every instance where the subject matches what we chose
-      return book.subject == $stateParams.id
+      return $stateParams.id ? book.subject == $stateParams.id : true //checks for a category, if none, randomly choose from all books
     }).randomElement()
   })
