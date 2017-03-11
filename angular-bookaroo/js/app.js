@@ -40,6 +40,7 @@ function RouterFunction($stateProvider) {
       controllerAs: "vm"
     })
 }
+
 Array.prototype.randomElement = function () {
     return this[Math.floor(Math.random() * this.length)]
 }
@@ -63,4 +64,3 @@ function bookarooShowControllerFunction(bookarooBookFactory, $stateParams) {
       return book.subject == $stateParams.id
     }).randomElement()
   })
-}
