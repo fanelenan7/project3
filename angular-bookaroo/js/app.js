@@ -40,12 +40,7 @@ function RouterFunction($stateProvider) {
       controllerAs: "vm"
     })
 }
-<<<<<<< HEAD
 Array.prototype.randomElement = function () { //added to prototype so I can randomly choose book without ruining scope in the show controller
-=======
-
-Array.prototype.randomElement = function () {
->>>>>>> 0db82aff3a6561bc82c9795cbd184513e7ea8d49
     return this[Math.floor(Math.random() * this.length)]
 }
 
