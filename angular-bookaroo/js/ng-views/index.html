@@ -1,5 +1,14 @@
-{{vm.genreArray}}
-<div data-ng-repeat="genre in vm.genreArray">
-  <div>{{genre}}</div>
+<!-- {{vm.genreArray}}
+<div data-ng-repeat="genre in vm.genreArray" ng-click="select(genre)" ng-class="{ selected: isSelected(genre)}">
+  <select ng-model="choice" ng-options="genre"></select>
 
 </div>
+<select ng-model="choice" ng-options="genre"></select> -->
+
+<h2>Welcome to Bookaroo!</h2>
+  <form name="myForm">
+    <select name="mySelect" id="mySelect"
+      data-ng-options="genre.subject for genre in vm.genreArray track by genre.subject"
+      data-ng-model="data.selectedOption" placeholder="Choose Your Genre"></select><br>
+      <a data-ui-sref="bookaroo({id: data.selectedOption.subject})"><button type="submit">Explore!</button></a>
+  </form>
