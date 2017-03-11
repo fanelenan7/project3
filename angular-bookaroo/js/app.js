@@ -7,16 +7,20 @@ angular
     "$stateProvider",
     RouterFunction
   ])
-  .factory("bookarooFactory", [
+  .factory("bookarooBookFactory", [
     "$resource",
-    bookarooFactoryFunction
+    bookarooBookFactoryFunction
+  ])
+  .factory("bookarooGenreFactory", [
+    "$resource",
+    bookarooGenreFactoryFunction
   ])
   .controller("bookarooIndexController", [
-    "bookarooFactory",
+    "bookarooGenreFactory",
     bookarooIndexControllerFunction
   ])
   .controller("bookarooShowController", [
-    "bookarooFactory",
+    "bookarooBookFactory",
     "$stateParams",
     bookarooShowControllerFunction
   ])
@@ -36,15 +40,27 @@ function RouterFunction($stateProvider) {
       controllerAs: "vm"
     })
 }
-
-function bookarooFactoryFunction($resource) {
-  return $resource("http://localhost:3000/books/:id")
+Array.prototype.randomElement = function () {
+    return this[Math.floor(Math.random() * this.length)]
 }
 
-function bookarooIndexControllerFunction(bookarooFactory) {
-  this.genres = bookarooFactory.query()
+function bookarooBookFactoryFunction($resource) {
+  let url = "http://localhost:3000/books/:id"
+  return $resource(url)
 }
-
-function bookarooShowControllerFunction(bookarooFactory, $stateParams) {
-  this.book = bookarooFactory.get({id: $stateParams.id})
+function bookarooGenreFactoryFunction($resource) {
+  let url = "http://localhost:3000/genres/:id"
+  return $resource(url)
+}
+function bookarooIndexControllerFunction(bookarooGenreFactory) {
+  this.genres = bookarooGenreFactory.query()
+  this.genres.$promise.then((genres)=>this.genreArray = genres.map((genre)=>genre.subject))
+}
+function bookarooShowControllerFunction(bookarooBookFactory, $stateParams) {
+  this.books = bookarooBookFactory.query()
+  this.books.$promise.then((books)=>{ //*.query() is asynchronous and has not finished retrieving the value. using then to retrieve value
+    this.book = books.filter( function(book){ //finding every instance where the subject matches what we chose
+      return book.subject == $stateParams.id
+    }).randomElement()
+  })
 }
