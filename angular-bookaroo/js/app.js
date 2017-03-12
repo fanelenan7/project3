@@ -21,7 +21,7 @@ angular
   ])
   .controller("bookarooShowController", [
     "bookarooBookFactory",
-    "$stateParams",
+    "$stateParams","$state","$scope",
     bookarooShowControllerFunction
   ])
 
@@ -56,11 +56,14 @@ function bookarooIndexControllerFunction(bookarooGenreFactory) {
   this.genres = bookarooGenreFactory.query()
   this.genres.$promise.then((genres)=>this.genreArray = genres)
 }
-function bookarooShowControllerFunction(bookarooBookFactory, $stateParams) {
+function bookarooShowControllerFunction(bookarooBookFactory, $stateParams, $state, $scope) {
   this.books = bookarooBookFactory.query()
   this.books.$promise.then((books)=>{ //*.query() is asynchronous and has not finished retrieving the value. using then to retrieve value
     this.book = books.filter( function(book){ //finding every instance where the subject matches what we chose
       return $stateParams.id ? book.subject == $stateParams.id : true //checks for a category, if none, randomly choose from all books
     }).randomElement()
   })
+  $scope.reloadRoute = function() {
+    $state.reload();
+  }
 }
