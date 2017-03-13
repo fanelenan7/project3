@@ -1,0 +1,10 @@
+body {
+  background:
+  url(http://wallpapercave.com/wp/ijo8KeK.jpg)
+  no-repeat center center fixed;
+  background-size: cover;
+}
+
+#bg {
+    background: rgba(76, 175, 80, 0.3) /* Green background with 30% opacity */
+}

@@ -1,10 +1,8 @@
-body, html {
+body {
   background:
   url(http://wallpapercave.com/wp/ijo8KeK.jpg);
   no-repeat center center fixed;
   background-size: cover;
-  padding: 0;
-  margin: 0;
 }
 
 h1 {
@@ -53,12 +51,6 @@ select {
   display: block;
   margin: 0 auto;
 }
-
-.wrapper {
-  display: grid;
-}
-
-
 
 .btn {
   font-family: 'Droid serif', serif;

@@ -1,8 +1,9 @@
 <div class="previewContainer" data-ng-hide="vm.book.showInformation">
   <h2>{{vm.book.title}}</h2>
   <h3>By: {{vm.book.author}}</h3>
-  <p>{{vm.book.preview}}</p>
+  <p id="previewText">{{vm.book.preview}}</p>
 </div>
+
 <div class="previewContainer" data-ng-show="vm.book.showInformation">
   <h2>{{vm.book.title}}</h2>
   <h3>By: {{vm.book.author}}</h3>
@@ -11,7 +12,13 @@
   <img data-ng-src="{{vm.book.cover}}">
   <p>{{vm.book.summary}}</p>
 </div>
-<div type="button" data-ng-click="vm.book.showInformation = !vm.book.showInformation">Information</div>
+
+
+
+<!-- <div type="button" class="btn" data-ng-click="vm.book.showInformation = !vm.book.showInformation">Information</div> -->
+<a data-ng-click="vm.book.showInformation = !vm.book.showInformation"><button type="submit" class="btn">Information</button></a>
 <!-- <div type="button" data-ng-if="vm.book.showInformation" data-ng-click="vm.book.showInformation = !vm.book.showInformation">Exit Information</button> -->
-<div type="button"><a ng-click="reloadRoute()">Find a new Book</a></div>
-<div type="button"><a data-ui-sref="bookarooIndex">Start Over</a></div>
+<!-- <div type="button" class="btn"><a ng-click="reloadRoute()">Find a new Book</a></div> -->
+<a data-ng-click="reloadRoute()"><button type="submit" class="btn">Find a New Book</button></a>
+<!-- <div type="button" class="btn"><a data-ui-sref="bookarooIndex">Start Over</a></div> -->
+<a data-ui-sref="bookarooIndex"><button type="submit" class="btn">Start Over</button></a>
