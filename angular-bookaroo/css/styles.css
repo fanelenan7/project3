@@ -1,73 +1,81 @@
-#bg, #search-bg {
-  background-image: url(http://wallpapercave.com/wp/ijo8KeK.jpg);
-  background-repeat: no-repeat;
-  background-size: 1080px auto;
-}
-
-#bg {
-  background-position: center top;
-  background-size: cover;
-  padding: 70px 90px 120px 90px;
-}
-
-#search-container {
-  position: relative;
-}
-
-#search-bg {
-  /* Absolutely position it, but stretch it to all four corners, then put it just behind #search's z-index */
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  z-index: 99;
-
-  /* Pull the background 70px higher to the same place as #bg's */
-  background-position: center -70px;
-
-  -webkit-filter: blur(10px);
-  filter: url('/media/blur.svg#blur');
-  filter: blur(10px);
-}
-
-#search {
-  /* Put this on top of the blurred layer */
-  position: relative;
-  z-index: 100;
-  padding: 20px;
-  background: rgb(34,34,34); /* for IE */
-  background: rgba(34,34,34,0.75);
-}
-
-@media (max-width: 600px ) {
-  #bg { padding: 10px; }
-  #search-bg { background-position: center -10px; }
-}
-
-#search h2, #search h5, #search h5 a { text-align: center; color: #fefefe; font-weight: normal; }
-#search h2 { margin-bottom: 50px }
-#search h5 { margin-top: 70px }
-
-/*body {
+body {
   background:
-  url(http://wallpapercave.com/wp/ijo8KeK.jpg)
+  url(http://wallpapercave.com/wp/ijo8KeK.jpg);
   no-repeat center center fixed;
   background-size: cover;
 }
 
-.background {
+h1 {
+  color: #b48608;
+  font-family: 'Droid Serif', serif;
+  font-size: 36px;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 44px;
+  margin: 0 0 12px;
+  text-align: center;
 }
 
-.transbox {
-  margin: 50px;
-  background-color: #ffffff;
-  border: 1px solid black;
-  opacity: 0.6;
+h3  {
+  font-family: 'Oswald', sans-serif;
+  color: white;
 }
 
-.transbox p {
-  margin: 5%;
-  font-weight: bold;
-  color: #000000;
-}*/
+h2 {
+  font-family: 'Special Elite', cursive;
+  color: white;
+}
+
+a {
+  color: #b48608;
+  text-decoration: none;
+  border-bottom: 1px solid #4c3a07;
+}
+
+a:hover {
+  color: #fff;
+  background: #b48608;
+}
+
+p {
+  color: #eee;
+  font-family: 'Special Elite', cursive;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0 0 14px;
+}
+
+#box {
+    background: rgba(3, 3, 3, 0.75);
+    margin: auto;
+    width: 75%;
+    padding: 10px;
+    overflow: auto;
+}
+
+#previewText {
+  font-family: 'Special Elite', cursive;
+  color: white;
+  line-height: 1.5;
+}
+
+.btn {
+  font-family: 'Droid serif', serif;
+  background: #b48608;
+  padding: 4px 7px;
+  color: #000;
+  text-decoration: none;
+  margin: 0 auto;
+  width: 100%;
+  width: 120px;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  font-style: italic;
+}
+
+.btn:hover {
+  color: #000;
+  background: #fff; 
+}
