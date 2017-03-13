@@ -9,7 +9,8 @@ body, html {
 
 h1 {
   color: #b48608;
-  font-family: 'Droid Serif', serif;
+  font-family: 'Special Elite', cursive;
+
   font-size: 36px;
   font-weight: 400;
   font-style: italic;
@@ -19,7 +20,7 @@ h1 {
 }
 
 h2 {
-  font-family: 'Special Elite', cursive;
+  font-family: 'Droid Serif', serif;
   color: #eee;
   text-align: center;
 }
@@ -42,7 +43,7 @@ a:hover {
 
 p {
   color: #eee;
-  font-family: 'Special Elite', cursive;
+  font-family: 'Oswald', sans-serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
@@ -89,7 +90,7 @@ select {
 }
 
 #previewText {
-  font-family: 'Special Elite', cursive;
-  color: white;
+  font-family: 'Droid serif', serif;
+  color: #eee;
   line-height: 1.5;
 }
