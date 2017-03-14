@@ -11,6 +11,6 @@
       data-ng-options="genre.subject for genre in vm.genreArray track by genre.subject"
       data-ng-model="data.selectedOption" placeholder="Choose Your Genre"></select><br>
 <br>
-    <a data-ui-sref="bookaroo({id: data.selectedOption.subject})"><button type="submit" class="btn">Explore!</button></a>
+    <a id="expand" data-ui-sref="bookaroo({id: data.selectedOption.subject})"><button type="submit" class="btn">Explore!</button></a>
   </form>
 </div>

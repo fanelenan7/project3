@@ -67,3 +67,15 @@ function bookarooShowControllerFunction(bookarooBookFactory, $stateParams, $stat
     $state.reload();
   }
 }
+
+
+$("#expand").click(()=> {
+  $(".landing").animate({
+    height: "100%"
+  }), 600
+})
+$("#collapse").click(()=> {
+  $(".landing").animate({
+    height: "200px"
+  }), 600
+})
