@@ -1,10 +1,14 @@
-body, html {
+body {
   background:
   url(http://wallpapercave.com/wp/ijo8KeK.jpg);
   no-repeat center center fixed;
   background-size: cover;
   padding: 0;
   margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 h1 {
@@ -84,8 +88,9 @@ select {
 #box {
     background: rgba(3, 3, 3, 0.75);
     margin: auto;
-    width: 75%;
-    padding: 10px;
+    width: 70%;
+    padding: 30px;
+    height: 200px;
     overflow: auto;
 }
 
@@ -93,4 +98,36 @@ select {
   font-family: 'Droid serif', serif;
   color: #eee;
   line-height: 1.5;
+}
+
+/*css animations*/
+
+.bookmark {
+  background-color: cyan;
+  height: 80px;
+  padding: 10px 20px 10px 15px;
+  margin-left: -70px;
+  display: flex;
+  justify-content: flex-end;
+  z-index: -1;
+  animation-name: wiggle;
+  transform: translate(0, 0) rotate(0deg);
+  animation-duration: 1.7s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+}
+
+@keyframes wiggle {
+  10%, 90% {
+    transform: translate(36px, 0) rotate(0deg);
+  }
+  25%, 50%, 85% {
+    transform: translate(66px, 0) rotate(0deg);
+  }
+  45%, 65% {
+    transform: translate(66px, 0) rotate(4deg);
+  }
+  45%, 75% {
+    transform: translate(66px, 0) rotate(-6deg);
+  }
 }
