@@ -1,11 +1,11 @@
 $(document).ready(()=> {
 
-$("#expand").click(()=> {
+$(document).on("click", "#expand", ()=> {
   $(".landing").animate({
     height: "100vh"
   }), 600
 })
-$("#collapse").click(()=> {
+$(document).on("click", "#collapse", ()=> {
   $(".landing").animate({
     height: "200px"
   }), 600
