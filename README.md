@@ -26,9 +26,13 @@ Bookaroo is based on the idea submitted by Jared Edwards:
 # Team Members
 
 ## Lisa Burr
-- CSS Styling
-- Initial Seed Data
-- More here
+- Led intitial group organization session
+- Initialized and set-up Trello project
+- Wrote HTML & applied CSS styling
+- Created initial seed data file
+- Deployed back-end to Heroku
+- Created Readme.md file
+- 
 
 ## Lena Santana
 - Angular module
