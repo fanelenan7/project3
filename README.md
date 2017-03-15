@@ -32,7 +32,7 @@ Bookaroo is based on the idea submitted by Jared Edwards:
 
 ## Lena Santana
 - Angular module
-- CSS animation
+- CSS and jQuery animations
 - more here
 
 ## Justin Shin
