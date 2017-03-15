@@ -2,8 +2,8 @@
 
 Each project should include a readme.md that provides information as to the roles of each member of the group. Specifically, it should include the responsibilities of each member and their accomplishments.
 
-<h1>Project 3 <li>Bookaroo</h1>
-<h2>Team 6 <li>Justin Shin, Lena Santana, Lisa Burr</h2>
+<h1>Project 3 - Bookaroo</h1>
+<h2>Team 6 - Justin Shin, Lena Santana, Lisa Burr</h2>
 
 <p>Concept: Bookaroo is based on the idea submitted by Jared Edwards: "Utilize the Google books api to help metro commuters explore new reading options. The app will be able to hold the preview text of a book randomly selected via the categories the user chooses so that during their no wifi/service metro ride they can see if they find something new".</p>
 
@@ -29,4 +29,8 @@ Nice2Haves
   <li>As a user I want to have a personal account that only I can access</li>
 </ul>
 
-Work
+Work Effort
+<ul>
+  <li>Justin Shin: PUT YOUR INPUT HERE</li>
+  <li>Lena Santana: PUT YOUR INPUT HERE</li>
+  <li>Lisa Burr: PUT YOUR INPUT HERE</li>
