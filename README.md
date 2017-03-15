@@ -4,6 +4,7 @@ Bookaroo is based on the idea submitted by Jared Edwards:
 > Utilize the Google books api to help metro commuters explore new reading options. The app will be able to hold the preview text of a book randomly selected via the categories the user chooses so that during their no wifi/service metro ride they can see if they find something new.
 
 #User Stories:
+
 ##MVP
 - As a user I want to be able to select a book genre
 - As a user I want to receive a random book from the selected category
@@ -23,6 +24,7 @@ Bookaroo is based on the idea submitted by Jared Edwards:
 - As a user I want to have a personal account that only I can access
 
 #Team Members
+
 ##Lisa Burr
 - CSS Styling
 - Initial Seed Data
