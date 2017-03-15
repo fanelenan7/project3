@@ -104,11 +104,21 @@ select {
   color: #eee;
   line-height: 1.5;
 }
+#invisible {
+  width: 200px;
+  height: 18px;
+  padding: 10px 20px 10px 30px;
+  margin-left: -50%;
+  margin-bottom: 10px;
+  background-color: rgba(0,0,0,0)
+}
 
 /*css animations*/
 
 .bookmark {
-  background-color: cyan;
+  background-color: #b48608;
+  color: white;
+  font-family: 'Oswald', sans-serif;
   width: 200px;
   height: 18px;
   padding: 10px 20px 10px 30px;
@@ -116,15 +126,14 @@ select {
   margin-bottom: 10px;
   display: flex;
   justify-content: flex-end;
-  /*z-index: -4;*/
   animation-name: wiggle;
   transform: translate(0, 0) rotate(0deg);
   animation-duration: 1.7s;
   animation-iteration-count: 1;
   animation-timing-function: ease-out;
+  /*display: none;*/
 }
 .container {
-  /*z-index: -10;*/
   margin-left: -390px;
 }
 @keyframes wiggle {

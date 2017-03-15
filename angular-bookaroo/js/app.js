@@ -31,13 +31,25 @@ function RouterFunction($stateProvider) {
       url: "/",
       templateUrl: "js/ng-views/index.html",
       controller: "bookarooIndexController",
-      controllerAs: "vm"
+      controllerAs: "vm",
+      onEnter: function() {
+        document.querySelectorAll(".bookmark").forEach((bookmark) => {
+          bookmark.style.display = "none"
+        })
+      }
     })
     .state("bookaroo", {
       url: "/books/:id",
       templateUrl: "js/ng-views/show.html",
       controller: "bookarooShowController",
-      controllerAs: "vm"
+      controllerAs: "vm",
+      onEnter: function() {
+        document.querySelectorAll(".bookmark").forEach((bookmark) => {
+          bookmark.style.display = "flex"
+          let newElement = bookmark.cloneNode(true)
+          bookmark.parentNode.replaceChild(newElement, bookmark)
+        })
+      }
     })
 }
 Array.prototype.randomElement = function () { //added to prototype so I can randomly choose book without ruining scope in the show controller
