@@ -27,12 +27,11 @@
     <div class="landing" id="box">
           <h1><a id="collapse" data-ui-sref="bookarooIndex">Bookaroo</a></h1>
           <main data-ui-view></main>
-          <!-- <div class="container"> -->
-            <a class ="bookmark" data-ng-click="vm.book.showInformation = !vm.book.showInformation">Information</a>
-            <a class ="bookmark" data-ng-click="reloadRoute()">Find a New Book</a>
-            <a class ="bookmark" id="collapse" data-ui-sref="bookarooIndex">Start Over</a>
-          <!-- </div> -->
     </div>
-
+    <div class="container">
+      <a class ="bookmark" data-ng-click="vm.book.showInformation = !vm.book.showInformation">Information</a>
+      <a class ="bookmark" data-ng-click="reloadRoute()">Find a New Book</a>
+      <a class ="bookmark" id="collapse" data-ui-sref="bookarooIndex">Start Over</a>
+    </div>
   </body>
 </html>

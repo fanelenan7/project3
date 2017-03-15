@@ -12,5 +12,15 @@ $(document).on("click", "#collapse", ()=> {
     // background: rgba(3, 3, 3, 0.70)
   }), 600
 })
+$(".bookmark").mouseenter(function(){
+   $(this).animate({
+     marginLeft: "-44px"
+   })
+ })
+ $(".bookmark").mouseleave(function(){
+   $(this).animate({
+     marginLeft: "-50%"
+    })
+  })
 
 })
