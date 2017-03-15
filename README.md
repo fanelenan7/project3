@@ -26,7 +26,7 @@ Bookaroo is based on the idea submitted by Jared Edwards:
 # Team Members
 
 ## Lisa Burr
-- Led intitial group organization session
+- Led initial group organization session
 - Drafted User Stories
 - Initialized and set-up Trello project
 - Wrote HTML & applied CSS styling
@@ -41,6 +41,7 @@ Bookaroo is based on the idea submitted by Jared Edwards:
 
 ## Justin Shin
 - Created the Rails as an API backend stateProvider
-- Wrote the angular front-end html
+- Wrote the angular front-end HTML
 - Wrote the controllers for angular
-- Created the seed data for the project
+- Created the final seed data for the project
+- Deployed front-end to Git Hub
