@@ -32,6 +32,7 @@ function RouterFunction($stateProvider) {
       templateUrl: "js/ng-views/index.html",
       controller: "bookarooIndexController",
       controllerAs: "vm",
+      // clear animation and bookmarks
       onEnter: function() {
         document.querySelectorAll(".bookmark").forEach((bookmark) => {
           bookmark.style.display = "none"
@@ -43,6 +44,7 @@ function RouterFunction($stateProvider) {
       templateUrl: "js/ng-views/show.html",
       controller: "bookarooShowController",
       controllerAs: "vm",
+      // animation trigger on enter
       onEnter: function() {
         document.querySelectorAll(".bookmark").forEach((bookmark) => {
           bookmark.style.display = "flex"
@@ -50,6 +52,7 @@ function RouterFunction($stateProvider) {
           bookmark.parentNode.replaceChild(newElement, bookmark)
         })
       }
+
     })
 }
 Array.prototype.randomElement = function () { //added to prototype so I can randomly choose book without ruining scope in the show controller

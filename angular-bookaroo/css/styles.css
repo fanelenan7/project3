@@ -92,7 +92,7 @@ select {
     background: rgba(0, 0, 0, 1);
     margin-right: 30%;
     width: 60%;
-    padding: 30px;
+    padding: 20px 30px 30px 30px;
     height: 200px;
     float: left;
     margin-left: auto;
@@ -111,6 +111,9 @@ select {
   margin-left: -50%;
   margin-bottom: 10px;
   background-color: rgba(0,0,0,0)
+}
+.heading {
+  margin-top: 15px;
 }
 
 /*css animations*/
