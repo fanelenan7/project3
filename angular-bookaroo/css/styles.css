@@ -1,6 +1,6 @@
 body {
   background:
-  url(http://wallpapercave.com/wp/ijo8KeK.jpg);
+  url(http://wallpapercave.com/wp/ijo8KeK.jpg)
   no-repeat center center fixed;
   background-size: cover;
   padding: 0;
@@ -104,31 +104,35 @@ select {
 
 .bookmark {
   background-color: cyan;
+  width: 150px;
   height: 18px;
   padding: 10px 20px 10px 30px;
-  margin-left: -70px;
+  margin-left: -100px;
   margin-bottom: 10px;
   display: flex;
   justify-content: flex-end;
-  z-index: -4;
+  /*z-index: -4;*/
   animation-name: wiggle;
-  transform: translate(0, 0) rotate(0deg);
+  transform: translate(140px, 0) rotate(0deg);
   animation-duration: 1.7s;
   animation-iteration-count: 1;
   animation-timing-function: ease-out;
 }
-
+.container {
+  z-index: -10;
+  float: right;
+}
 @keyframes wiggle {
   10%, 90% {
-    transform: translate(36px, 0) rotate(0deg);
+    transform: translate(156px, 0) rotate(0deg);
   }
   25%, 50%, 85% {
-    transform: translate(66px, 0) rotate(0deg);
+    transform: translate(206px, 0) rotate(0deg);
   }
   45%, 65% {
-    transform: translate(66px, 0) rotate(4deg);
+    transform: translate(206px, 0) rotate(4deg);
   }
   45%, 75% {
-    transform: translate(66px, 0) rotate(-6deg);
+    transform: translate(206px, 0) rotate(-6deg);
   }
 }
