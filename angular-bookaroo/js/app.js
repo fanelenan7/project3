@@ -78,7 +78,16 @@ function bookarooShowControllerFunction(bookarooBookFactory, $stateParams, $stat
       return $stateParams.id ? book.subject == $stateParams.id : true //checks for a category, if none, randomly choose from all books
     }).randomElement()
   })
-  $scope.reloadRoute = function() {
+  $scope.fixLinks = function() {
+  //jjs: toggles the view of preview v information
+  $('.informationLink').on('click', function(){
+    $('.previewContainer').toggle()
+  });
+  //jjs: reloads state, which looks for a new book in same category
+  $('.reloadLink').on('click', function() {
     $state.reload();
-  }
+  });
+}
+//jjs: after everything is done, load up the listeners for the bookmarks
+$scope.fixLinks()
 }
