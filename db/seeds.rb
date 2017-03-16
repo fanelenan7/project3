@@ -3,6 +3,8 @@
 #
 # Examples:
 #
+Genre.delete_all
+Book.delete_all
 
 Book.create(
   isbn: "0393061310",
@@ -207,46 +209,6 @@ cover: "https://images-na.ssl-images-amazon.com/images/I/51ba699jSlL._SX319_BO1,
 preview: "One HE CHANGED IDENTITY LIKE MANY warriors do before battle. He called himself Mercury on nights like these. Dressed in black from his visor helmet to his steel-toe boots, Mercury had his motorcycle backed up into a huge rhododendron bush by the Rock Creek Parkway south of Calvert Street. He sat astride the idling bike and cradled a U.S. Army surplus light detection and ranging device. He trained the lidar on every vehicle that went past him, checking its speed.  Forty-five miles an hour, on the money. Forty-four. Fiftytwo. Routine stuff. Safe numbers. Boring numbers. Mercury was hoping to see a more exotic and inflated figure on the screen. He had good reason to believe a bloated number like that would appear before this night was over. He was certainly in the right place for it. Built in the 1920s, Rock Creek Parkway had been designed to preserve the natural scenic beauty of the area. The winding four-lane road ran from the Lincoln Memorial north through parks, gardens, and woods. It was 2.9 miles long and split in Northwest DC. Beach Drive, the right fork, headed northeast, deeper into the park. The parkway itself continued on to the left and curled back northwest to the intersection with Calvert Street. Forty-three miles an hour, according to the lidar display. Forty-seven. Forty-five. These numbers were not surprising. The parkway was on the National Register of Historic Places and was maintained by the National Park Service; it had a set speed limit of fortyfive miles an hour. But the parkway’s meandering route was about as close to a Grand Prix circuit as you could find in or around the District of Columbia. Elongated S curves, chicanes, a few altitude changes, straightaways that ran down the creek bottom— they were all there, and the road was almost twice the length of the fabled Grand Prix course at Watkins Glen, New York. That alone makes it a target, Mercury thought. That alone says someone will try. If not tonight, then tomorrow, or the night after. He’d read an article in the Washington Post that said that on any given night, the odds were better than one in three that some rich kid or an older prick sucking big-time off the federal teat would bring out the new Porsche or the overhorsed BMW and take a crack at Rock Creek. So might the suburban kid who’d snuck out the old man’s Audi, or even a middle-aged mom or two. All sorts of people seemed obsessed by it. One try every three nights, Mercury thought. But tonight, the odds were even better than average. A few days ago, a budget crisis had closed the U.S. government. All funding for park law enforcement had been frozen. No salaries were being paid. Park rangers had been sent home for liability reasons. There was no one looking but him. Hours went by. Traffic slowed to a trickle, and still Mercury aimed the lidar gun and shot, read the verdict, and waited. He was nodding off at a quarter to three that morning and thinking that he should pack it in when he heard the growl of a big-bore engine turning onto the parkway from Beach Drive. On that sound alone, Mercury’s right hand shot out and fired up the bike. His left hand aimed the lidar at the growl, which became a whining, buzzing wail of fury coming right at him." The instant he had headlights, he hit the trigger. Seventy-two miles an hour. He tossed the lidar into the rhododendrons. He’d return for it later. The Maserati blew by him. Mercury twisted the accelerator and popped the clutch. He blasted out of the rhododendrons, flew off the embankment, and landed with a smoking squeal in the parkway not a hundred yards behind the Italian sports car.",
 have_read: true
 )
-# Book.create(
-#   isbn: "",
-#   title: "",
-#   author: "",
-#   summary: "",
-#   subject: "Romance",
-#   cover: "",
-#   preview: "",
-#   have_read: false
-# )
-# Book.create(
-#   isbn: "",
-#   title: "",
-#   author: "",
-#   summary: "",
-#   subject: "Romance",
-#   cover: "",
-#   preview: "",
-#   have_read: false
-# )
-# Book.create(
-#   isbn: "",
-#   title: "",
-#   author: "",
-#   summary: "",
-#   subject: "Romance",
-#   cover: "",
-#   preview: "",
-#   have_read: false
-# )
-# Book.create(
-#   isbn: "",
-#   title: "",
-#   author: "",
-#   summary: "",
-#   subject: "Romance",
-#   cover: "",
-#   preview: "",
-#   have_read: false
-# )
 
 Genre.create(subject: "History")
 Genre.create(subject: "Sci-Fi")
