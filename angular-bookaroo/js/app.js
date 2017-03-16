@@ -52,7 +52,6 @@ function RouterFunction($stateProvider) {
           bookmark.parentNode.replaceChild(newElement, bookmark)
         })
       }
-
     })
 }
 Array.prototype.randomElement = function () { //added to prototype so I can randomly choose book without ruining scope in the show controller
@@ -73,12 +72,31 @@ function bookarooIndexControllerFunction(bookarooGenreFactory) {
 }
 function bookarooShowControllerFunction(bookarooBookFactory, $stateParams, $state, $scope) {
   this.books = bookarooBookFactory.query()
+
   this.books.$promise.then((books)=>{ //*.query() is asynchronous and has not finished retrieving the value. using then to retrieve value
     this.book = books.filter( function(book){ //finding every instance where the subject matches what we chose
       return $stateParams.id ? book.subject == $stateParams.id : true //checks for a category, if none, randomly choose from all books
     }).randomElement()
   })
-  $scope.reloadRoute = function() {
-    $state.reload();
+
+  // jjs: this is handled via jquery below and can now be deleted
+  // $scope.reloadRoute = function() {
+  //   $state.reload();
+  // }
+
+  //jjs: the two bookmark-links that went out of scope by moving to index.html
+  //jjs: wait till load event fires so all resources are available
+  $scope.fixLinks = function() {
+    //jjs: toggles the view of preview v information
+    $('.informationLink').on('click', function(){
+      $('.previewContainer').toggle()
+    });
+    //jjs: reloads state, which looks for a new book in same category
+    $('.reloadLink').on('click', function() {
+      $state.reload();
+    });
   }
+  //jjs: after everything is done, load up the listeners for the bookmarks
+  $scope.fixLinks()
+
 }

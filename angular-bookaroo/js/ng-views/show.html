@@ -1,10 +1,13 @@
-<div class="previewContainer" data-ng-hide="vm.book.showInformation">
+
+<!-- justin: from both preview containers, deleted data-ng-hide, to be handled via jQuery instead} -->
+<div class="previewContainer">
   <h2>{{vm.book.title}}</h2>
   <h3>By: {{vm.book.author}}</h3>
   <p id="previewText">{{vm.book.preview}}</p>
 </div>
 
-<div class="previewContainer" data-ng-show="vm.book.showInformation">
+<!-- justin: jQuery handles hide using toggle(), so display set to none.  Could do this in css i suppose... this is easier -->
+<div class="previewContainer" style="display: none;">
   <h2>{{vm.book.title}}</h2>
   <h3>By: {{vm.book.author}}</h3>
   <h3>ISBN: {{vm.book.isbn}}</h3>
