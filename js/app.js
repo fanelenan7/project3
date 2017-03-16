@@ -95,6 +95,12 @@ function bookarooShowControllerFunction(bookarooBookFactory, $stateParams, $stat
     $('.reloadLink').on('click', function() {
       $state.reload();
     });
+    //jjs: when reloading the show link, it will not reload the container in its small state
+    $(document).ready(()=> {
+      $(".landing").animate({
+        height: "100vh",
+      }), 0
+    })
   }
   //jjs: after everything is done, load up the listeners for the bookmarks
   $scope.fixLinks()
