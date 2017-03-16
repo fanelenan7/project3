@@ -59,11 +59,11 @@ Array.prototype.randomElement = function () { //added to prototype so I can rand
 }
 
 function bookarooBookFactoryFunction($resource) {
-  let url = "https://bookaroo.herokuapp.com/books/:id"
+  let url = "http://localhost:3000/books/:id"
   return $resource(url)
 }
 function bookarooGenreFactoryFunction($resource) {
-  let url = "https://bookaroo.herokuapp.com/genres/:id"
+  let url = "http://localhost:3000/genres/:id"
   return $resource(url)
 }
 function bookarooIndexControllerFunction(bookarooGenreFactory) {
