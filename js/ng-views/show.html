@@ -3,7 +3,7 @@
 <div class="previewContainer">
   <h2>{{vm.book.title}}</h2>
   <h3>By: {{vm.book.author}}</h3>
-  <p id="previewText"><pre>{{vm.book.preview}}</pre></p>
+  <p id="previewText" class="whitespaceTag">{{vm.book.preview}}</p>
 </div>
 
 <!-- justin: jQuery handles hide using toggle(), so display set to none.  Could do this in css i suppose... this is easier -->
@@ -13,7 +13,7 @@
   <h3>ISBN: {{vm.book.isbn}}</h3>
   <h3>Subject: {{vm.book.subject}}</h3>
   <img data-ng-src="{{vm.book.cover}}">
-  <p><pre>{{vm.book.summary}}</pre></p>
+  <p class = "whitespaceTag">{{vm.book.summary}}</p>
 </div>
 <script src="js/script.js"></script>
 
