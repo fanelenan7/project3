@@ -122,9 +122,6 @@ the calc is there to get the viewheight and just subtract the size of the header
   overflow: scroll;
   height: calc(100vh - 55px);
 }
-.whitespaceTag {
-  white-space: pre-wrap;
-}
 /*css animations*/
 
 .bookmark {
