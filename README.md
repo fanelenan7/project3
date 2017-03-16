@@ -45,3 +45,4 @@ Bookaroo is based on the idea submitted by Jared Edwards:
 - Wrote the controllers for angular
 - Created the final seed data for the project
 - Deployed front-end to Git Hub
+- Connected front-end to back-end
