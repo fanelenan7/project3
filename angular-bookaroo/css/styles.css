@@ -92,7 +92,7 @@ select {
     background: rgba(0, 0, 0, 1);
     margin-right: 30%;
     width: 60%;
-    padding: 30px;
+    padding: 20px 30px 30px 30px;
     height: 200px;
     float: left;
     margin-left: auto;
@@ -111,6 +111,16 @@ select {
   margin-left: -50%;
   margin-bottom: 10px;
   background-color: rgba(0,0,0,0)
+}
+.heading {
+  margin-top: 15px;
+}
+
+/*jjs: added this CSS so that the div will scroll instead of continuing past the container
+the calc is there to get the viewheight and just subtract the size of the header (really about 51px)*/
+.previewContainer{
+  overflow: scroll;
+  height: calc(100vh - 55px);
 }
 
 /*css animations*/
@@ -136,6 +146,7 @@ select {
 .container {
   margin-left: -390px;
 }
+
 @keyframes wiggle {
   10%, 90% {
     transform: translate(30px, 0) rotate(0deg);
