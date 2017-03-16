@@ -1,6 +1,6 @@
 body {
   background:
-  url(http://wallpapercave.com/wp/ijo8KeK.jpg);
+  url(http://wallpapercave.com/wp/ijo8KeK.jpg)
   no-repeat center center fixed;
   background-size: cover;
   padding: 0;
@@ -9,6 +9,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  cursor: default;
 }
 
 h1 {
@@ -38,11 +39,13 @@ a {
   color: #b48608;
   text-decoration: none;
   border-bottom: 1px solid #4c3a07;
+  cursor: default;
 }
 
 a:hover {
   color: #fff;
   background: #b48608;
+  cursor: default;
 }
 
 p {
@@ -87,11 +90,13 @@ select {
 
 #box {
     background: rgba(0, 0, 0, 1);
-    margin: auto;
+    margin-right: 30%;
     width: 60%;
-    padding: 30px;
+    padding: 20px 30px 30px 30px;
     height: 200px;
     float: left;
+    margin-left: auto;
+    z-index: 3;
 }
 
 #previewText {
@@ -99,36 +104,60 @@ select {
   color: #eee;
   line-height: 1.5;
 }
+#invisible {
+  width: 200px;
+  height: 18px;
+  padding: 10px 20px 10px 30px;
+  margin-left: -50%;
+  margin-bottom: 10px;
+  background-color: rgba(0,0,0,0)
+}
+.heading {
+  margin-top: 15px;
+}
+
+/*jjs: added this CSS so that the div will scroll instead of continuing past the container
+the calc is there to get the viewheight and just subtract the size of the header (really about 51px)*/
+.previewContainer{
+  overflow: scroll;
+  height: calc(100vh - 55px);
+}
 
 /*css animations*/
 
 .bookmark {
-  background-color: cyan;
+  background-color: #b48608;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  width: 200px;
   height: 18px;
   padding: 10px 20px 10px 30px;
-  margin-left: -70px;
+  margin-left: -50%;
   margin-bottom: 10px;
   display: flex;
   justify-content: flex-end;
-  z-index: -4;
   animation-name: wiggle;
   transform: translate(0, 0) rotate(0deg);
   animation-duration: 1.7s;
   animation-iteration-count: 1;
   animation-timing-function: ease-out;
+  /*display: none;*/
+}
+.container {
+  margin-left: -390px;
 }
 
 @keyframes wiggle {
   10%, 90% {
-    transform: translate(36px, 0) rotate(0deg);
+    transform: translate(30px, 0) rotate(0deg);
   }
   25%, 50%, 85% {
-    transform: translate(66px, 0) rotate(0deg);
+    transform: translate(60px, 0) rotate(0deg);
   }
   45%, 65% {
-    transform: translate(66px, 0) rotate(4deg);
+    transform: translate(60px, 0) rotate(4deg);
   }
   45%, 75% {
-    transform: translate(66px, 0) rotate(-6deg);
+    transform: translate(60px, 0) rotate(-6deg);
   }
 }
