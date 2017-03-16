@@ -1,3 +1,84 @@
+# This file should contain all the record creation needed to seed the database with its default values.
+# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
+#
+# Examples:
+#
+Book.delete_all
+Genre.delete_all
+
+Book.create(
+isbn: "0393061310",
+title: "Guns, germs, and steel: the fates of human societies",
+author: "Jared Diamond",
+summary: "Most of this work deals with non-Europeans, but Diamond's thesis sheds light on why Western civilization became hegemonic: 'History followed different courses for different peoples because of differences among peoples' environments, not because of biological differences among peoples themselves.' Those who domesticated plants and animals early got a head start on developing writing, government, technology, weapons of war, and immunity to deadly germs. (LJ 2/15/97)
+Copyright 1999 Reed Business Information, Inc.",
+subject: "History",
+cover: "https://ia601407.us.archive.org/zipview.php?zip=/8/items/olcovers92/olcovers92-L.zip&file=925830-L.jpg",
+preview: " This book attempts to provide a short history of everybody for the last 13,000 years. The question motivating the book is: Why did history unfold differently on different continents? In case this question immediately makes you shudder at the thought that you are about to read a racist treatise, you aren't: as you will see, the answers to the question don't involve human racial differences at all. The book's emphasis is on the search for ultimate explanations, and on pushing back the chain of historical causation as far as possible...",
+have_read: false
+)
+Book.create(
+isbn: "0812971442",
+title: "Forty Ways to Look at Winston Churchill: A Brief Account of a Long Life",
+author: "Gretchen Rubin",
+summary: "A WALL STREET JOURNAL SUMMER PICK<br><br>A WASHINGTON POST BESTSELLER<br><br>Warrior and writer, genius and crank, rider in the British cavalry's last great charge and inventor of the tank, Winston Churchill led Britain to fight alone against Nazi Germany in the fateful year of 1940 and set the standard for leading a democracy at war. With penetrating insight and vivid anecdotes, Gretchen Rubin makes Churchill accessible and meaningful to twenty-first-century readers by analyzing the many contrasting views of the man: he was an alcoholic, he was not; he was an anachronism, he was a visionary; he was a racist, he was a humanitarian; he was the most quotable man in the history of the English language, he was a bore.<br><br>Like no other portrait of its famous subject, Forty Ways to Look at Winston Churchill is a dazzling display of facts more improbable than fiction. It brings to full realization the depiction of a man too fabulous for any novelist to construct, too complex for even the longest narrative to describe, and too significant ever to be forgotten.",
+subject: "History",
+cover: "https://ia802606.us.archive.org/zipview.php?zip=/29/items/olcovers431/olcovers431-L.zip&file=4311218-L.jpg",
+preview: "As their subtitles reveal, most of Churchill's biographers acclaim him as a hero: Isaiah Berlin's mystical tribute, A Portrait of a Great Man at a Great Moment; Geoffrey Best's balanced praise, A Study in Greatness; Martin Gilbert's meticulous volumes, including The Prophet of Truth and Finest Hour; William Manchester's virile adventure story, The Last Lion. Memoirs like Violet Bonham-Carter's intimate portrait, Pug Ismay's loyal account, and Jock Colville's reminiscences argue the same case. And of course, of all the mythmakers, no one did more than Churchill himself to construct the heroic Churchill.<br><br>A torrent of facts proves their conclusions: that Churchill was a great man and the savior of his country; a farsighted statesman; a brilliant politician, orator, and writer; a loving husband and father; a man with a few endearing faults—or if not endearing, excusable.<br><br>No leader did more for his country than Winston Churchill. Brave, magnanimous, traditional, he was like a king-general from Britain's heroic past. His gigantic qualities set him apart from ordinary humanity; there seemed no danger he feared, no effort too great for his limitless energies....",
+have_read: false
+)
+Book.create(
+isbn: "0060528427",
+title: "A people's history of the United States",
+author: "Howard Zinn",
+summary: "Since its original landmark publication in 1980, A People's History of the United States has been chronicling American history from the bottom up, throwing out the official version of history taught in schools — with its emphasis on great men in high places — to focus on the street, the home, and the, workplace.Known for its lively, clear prose as well as its scholarly research, A People's History is the only volume to tell America's story from the point of view of — and in the words of — America's women, factory workers, African-Americans, Native Americans, the working poor, and immigrant laborers.<br><br> As historian Howard Zinn shows, many of our country's greatest battles — the fights for a fair wage, an eight-hour workday, child-labor laws, health and safety standards, universal suffrage, women's rights, racial equality — were carried out at the grassroots level, against bloody resistance. Covering Christopher Columbus's arrival through President Clinton's first term, A People's History of the United States, which was nominated for the American Book Award in 1981, features insightful analysis of the most important events in our history.<br><br>Revised, updated, and featuring a new afterword by the author, this special twentieth anniversary edition continues Zinn's important contribution to a complete and balanced understanding of American history.",
+subject: "History",
+cover: "https://ia800803.us.archive.org/zipview.php?zip=/27/items/olcovers3/olcovers3-L.zip&file=37679-L.jpg",
+preview: "Arawak men and women, naked, tawny, and full of wonder, emerged from their villages onto the island's beaches and swam out to get a closer look at the strange big boat. When Columbus and his sailors came ashore, carrying swords, speaking oddly, the Arawaks ran to greet them, brought them food, water, gifts. He later wrote of this in his log:<br><br>They ... brought us parrots and balls of cotton and spears and many other things, which they exchanged for the glass beads and hawks' bells. They willingly traded everything they owned... . They were well-built, with good bodies and handsome features.... They do not bear arms, and do not know them, for I showed them a sword, they took it by the edge and cut themselves out of ignorance. They have no iron. Their spears are made of cane... . They would make fine servants.... With fifty men we could subjugate them all and make them do whatever we want.<br><br>These Arawaks of the Bahama Islands were much like Indians on the mainland, who were remarkable (European observers were to say again and again) for their hospitality, their belief in sharing. These traits did not stand out in the Europe of the Renaissance, dominated as it was by the religion of popes, the government of kings, the frenzy for money that marked Western civilization and its first messenger to the Americas, Christopher Columbus.",
+have_read: false
+)
+Book.create(
+isbn: "006236359X",
+title: "Hidden Figures: The American Dream and the Untold Story of the Black Women Mathematicians Who Helped Win the Space Race",
+author: "Margot Lee Shetterly",
+summary: "Before John Glenn orbited the earth, or Neil Armstrong walked on the moon, a group of dedicated female mathematicians known as 'human computers' used pencils, slide rules and adding machines to calculate the numbers that would launch rockets, and astronauts, into space.",
+subject: "History",
+cover: "https://covers.openlibrary.org/w/id/7894801-L.jpg",
+preview: "Melvin Butler, the personnel officer at the Langley Memorial Aeronautical Laboratory, had a problem, the scope and nature of which was made plain in a May 1943 telegram to the civil service's chief of field operations. 'This establishment has urgent need for approximately 100 Junior Physicists and Mathematicians, 100 Assistant Computers, 75 Minor Laboratory Apprentices, 125 Helper Trainees, 50 Stenographers and Typists,' exclaimed the missive. Every morning at 7:00 a.m., the bow-tied Butler and his staff sprang to life, dispatching the lab's station wagon to the local rail depot, the bus station, and the ferry terminal to collect the men and women—so many women now, each day more women—who had made their way to the lonely finger of land on the Virginia coast. The shuttle conveyed the recruits to the door of the laboratory's Service Building on the campus of Langley Field. Upstairs, Butler's staff whisked them through the first-day stations: forms, photos, and the oath of office: I will support and defend the Constitution of the United States against all enemies, foreign and domestic",
+have_read: false
+)
+Book.create(
+isbn: "9780590353427",
+title: "Harry Potter and The Sorcerer's Stone",
+author: "JK Rowling",
+summary: "Harry Potter has never been the star of a Quidditch team, scoring points while riding a broom far above the ground. He knows no spells, has never helped to hatch a dragon, and has never worn a cloak of invisibility.",
+subject: "Fiction",
+cover: "https://covers.openlibrary.org/b/id/7897300-L.jpg",
+preview: "Nearly ten years had passed since the Dursleys had woken up to find their nephew on the front step, but Privet Drive had hardly changed at all. The sun rose on the same tidy front gardens and lit up the brass number four on the Dursleys' front door; it crept into their living room, which was almost exactly the same as it had been on the night when Mr. Dursley had seen that fateful news report about the owls. Only the photographs on the mantelpiece really showed how much time had passed. Ten years ago, there had been lots of pictures of what looked like a large pink beach ball wearing different-colored bonnets - but Dudley Dursley was no longer a baby, and now the photographs showed a large blond boy riding his first bicycle, on a carousel at the fair, playing a computer game with his father, being hugged and kissed by his mother. The room held no sign at all that another boy lived in the house, too. ",
+have_read: false
+)
+Book.create(
+isbn: "0439064872",
+title: "Harry Potter and The Chamber of Secrets",
+author: "JK Rowling",
+summary: "The Dursleys were so mean and hideous that summer that all Harry Potter wanted was to get back to the Hogwarts School for Witchcraft and Wizardry. But just as he's packing his bags, Harry receives a warning from a strange, impish creature named Dobby who says that if Harry Potter returns to Hogwarts, disaster will strike. ",
+subject: "Fiction",
+cover: "https://covers.openlibrary.org/b/id/7370157-L.jpg",
+preview: "October arrived, spreading a damp chill over the grounds and into the castle. Madam Pomfrey, the nurse, was kept busy by a sudden spate of colds among the staff and students. Her Pepperup potion worked instantly, though it left the drinker smoking at the ears for several hours afterward. Ginny Weasley, who had been looking pale, was bullied into taking some by Percy. The steam pouring from under her vivid hair gave the impression that her whole head was on fire. <br><br>Raindrops the size of bullets thundered on the castle windows for days on end; the lake rose, the flower beds turned into muddy streams, and Hagrid's pumpkins swelled to the size of garden sheds. Oliver Wood's enthusiasm for regular training sessions, however, was not dampened, which was why Harry was to be found, late one stormy Saturday afternoon a few days before Halloween, returning to Gryffindor Tower, drenched to the skin and splattered with mud. <br><br>Even aside from the rain and wind it hadn't been a happy practice session. Fred and George, who had been spying on the Slytherin team, had seen for themselves the speed of those new Nimbus Two Thousand and Ones. They reported that the Slytherin team was no more than seven greenish blurs, shooting through the air like missiles.",
+have_read: false
+)
+Book.create(
+isbn: "1551922460",
+title: "Harry Potter and The Prisoner of Azkaban",
+author: "JK Rowling",
+summary: "For twelve long years, the dread fortress of Azkaban held an infamous prisoner named Sirius Black. Convicted of killing thirteen people with a single curse, he was said to be the heir apparent to the Dark Lord, Voldemort. Now he has escaped, leaving only two clues as to where he might be headed. Harry Potter's defeat of You-Know-Who was Black's downfall as well. And the Azkaban guards heard Black muttering in his sleep, 'Hes at Hogwarts...hes at Hogwarts.' Harry Potter isn't safe, not even within the walls of his magical school, surrounded by his friends. Because on top of it all, there may well be a traitor in their midst.",
+subject: "Fiction",
+cover: "https://ia600803.us.archive.org/zipview.php?zip=/13/items/olcovers666/olcovers666-L.zip&file=6666519-L.jpg",
+preview: "Harry went down to breakfast the next morning to find the three Dursleys already sitting around the kitchen table. They were watching a brand-new television, a welcome- home-for- the-summer present for Dudley, who had been complaining loudly about the long walk between the fridge and the television in the living room. Dudley had spent most of the summer in the kitchen, his piggy little eyes fixed on the screen and his five chins wobbling as he ate continually. <br><br>Harry sat down between Dudley and Uncle Vernon, a large, beefy man with very little neck and a lot of mustache. Far from wishing Harry a happy birthday, none of the Dursleys made any sign that they had noticed Harry enter the room, but Harry was far too used to this to care. He helped himself to a piece of toast and then looked up at the reporter on the television, who was halfway through a report on an escaped convict... ",
+have_read: false
+)
+Book.create(
+isbn: "9780439139601",
 title: "Harry Potter and The Goblet of Fire",
 author: "JK Rowling",
 summary: "This is the pivotal fourth novel in the seven part tale of Harry Potter's training as a wizard and his coming of age. Harry wants to get away from the pernicious Dursleys and go to the International Quidditch Cup with Hermione, Ron, and the Weasleys. He wants to dream about Cho Chang, his crush (and maybe do more than dream). He wants to find out about the mysterious event that's supposed to take place at the Hogwarts this year, an event involving two other rival schools of magic, and a competition that hasn't happened in a hundred years. He wants to be a normal, fourteen year old wizard. Unfortunately for Harry Potter, he's not normal - even by wizarding standards. ",
